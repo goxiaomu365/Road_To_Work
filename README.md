@@ -2,7 +2,6 @@
 ## 个人情况说明：
 ***
 ## 数据结构
- *nn
  void main()
 {
     printf("Hello, Markdown.");
