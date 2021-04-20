@@ -4,6 +4,8 @@
 例如，当k为18时，机器人能够进入方格 [35, 37] ，因为3+5+3+7=18。但它不能进入方格 [35, 38]，因为3+5+3+8=19。
 请问该机器人能够到达多少个格子？
 
+## 图解题解了解递归过程，注意图中的返回值
+[图解学习链接了解递归过程](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/solution/mian-shi-ti-13-ji-qi-ren-de-yun-dong-fan-wei-dfs-b/)
 
 ## 源代码
 ```java
@@ -46,9 +48,8 @@ class Solution {
 ```
 
 ## 错误分析
-```java
 1.第21行,27行在计算row,colum的位和时改变了其自身值，导致在后面判断colum>=m已经不是我们所需要的那个colum和row了，
 所以最好调用一个函数来计算位和，这样，row和colum值就不会改变了
 2.注意终止条件的判别
-3.[图解学习链接了解递归过程](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/solution/mian-shi-ti-13-ji-qi-ren-de-yun-dong-fan-wei-dfs-b/)
-```
+
+
